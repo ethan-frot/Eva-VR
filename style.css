@@ -1,0 +1,405 @@
+/* Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Root */
+:root {
+  /* Primay */
+  --primary-main: #7562d9;
+
+  /* Neutral */
+  --neutral-100: rgba(255, 255, 255);
+  --neutral-300: rgba(255, 255, 255, 0.8);
+  --neutral-500: rgba(255, 255, 255, 0.6);
+  --neutral-700: rgba(255, 255, 255, 0.4);
+
+  /* Bakcground */
+  --background: #070523;
+
+  /* Spacing */
+  --space-none: 0px;
+  --space-3xs: 2px;
+  --space-2xs: 4px;
+  --space-xs: 6px;
+  --space-sm: 8px;
+  --space-2sm: 10px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --space-2xl: 24px;
+  --space-3xl: 28px;
+  --space-4xl: 32px;
+  --space-5xl: 36px;
+  --space-6xl: 40px;
+  --space-7xl: 44px;
+  --space-8xl: 48px;
+  --space-9xl: 56px;
+  --space-10xl: 64px;
+  --space-section: 120px;
+  --space-full: 999px;
+
+  /* Font family */
+  --fontFamily: Montserrat;
+
+  /* Font-size */
+  --h1: 1.75rem;
+  --h2: 1.25rem;
+  --h3: 1.75rem;
+  --p: 0.875rem;
+  --item: 0.75rem;
+
+  /* Font weight */
+  --extraBold: 800;
+  --bold: 600;
+  --regular: 500;
+}
+
+/* Templates */
+.item {
+  color: var(--neutral-100);
+  font-size: var(--item);
+  font-weight: var(--regular);
+  text-transform: uppercase;
+}
+
+h1 {
+  color: var(--neutral-100);
+  font-size: var(--h1);
+  font-weight: var(--extraBold);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+h2 {
+  color: var(--neutral-100);
+  font-size: var(--h2);
+  font-weight: var(--extraBold);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+p {
+  color: var(--neutral-500);
+  font-size: var(--p);
+  font-weight: var(--regular);
+  line-height: 24px;
+}
+
+button {
+  all: unset;
+  display: flex;
+  padding: var(--space-md) var(--space-3xl);
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--space-4xl);
+  background: var(--primary-main);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: var(--neutral-100);
+}
+
+span {
+  color: var(--primary-main, #7562d9);
+}
+
+/* General */
+
+* {
+  font-family: var(--fontFamily);
+  box-sizing: border-box;
+  margin: var(--spacing-none);
+}
+
+html,
+body {
+  width: 100%;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  width: 100%;
+  padding: var(--space-8xl) var(--space-3xl);
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/assets/header-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-content {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-7xl);
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 65px;
+  height: 24px;
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-6xl);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.connection {
+  background: transparent;
+  border: 1px solid var(--neutral-100);
+}
+
+.title-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6xl);
+  width: 50%;
+  max-width: 400px;
+}
+
+.reserver {
+  width: 120px;
+}
+
+.title-image {
+  width: 50%;
+}
+
+/* Main */
+main {
+  height: 100%;
+  display: flex;
+  padding: var(--space-8xl) var(--space-3xl) var(--space-section)
+    var(--space-3xl);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--neutral-background, #070523);
+}
+
+.container {
+  display: flex;
+  max-width: 980px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-section);
+}
+
+/* After-h */
+
+.after-h {
+  display: flex;
+  align-items: center;
+  gap: var(--space-10xl);
+}
+
+.after-h-image {
+  width: 380px;
+  height: 450px;
+}
+
+.after-h-title {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4xl);
+}
+
+/* Game-modes */
+
+.game-modes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-6xl);
+}
+
+.game-modes-selection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xl);
+}
+
+.modes {
+  width: 100%;
+  display: flex;
+  padding: var(--space-md);
+  align-items: center;
+  border: 1px solid var(--neutral-700);
+  transition: all 0.5s ease;
+}
+
+.mode {
+  width: 100%;
+  background: linear-gradient(
+      180deg,
+      rgba(5, 3, 19, 0) 70.73%,
+      rgba(5, 3, 19, 0.45) 100%
+    ),
+    url(assets/deathmatch.png) no-repeat center/cover;
+}
+
+.mode:hover .overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(10, 6, 38, 0) 0%,
+    rgba(10, 6, 38, 0.81) 55.1%,
+    rgba(10, 6, 38, 0.9) 100%
+  );
+}
+
+.mode:hover .mode-container {
+  transform: translateY(0%);
+}
+
+.mode:hover .mode-description {
+  opacity: 1;
+}
+
+.overlay {
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  width: 100%;
+  display: flex;
+  padding: var(--space-md);
+  align-items: center;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.mode-container {
+  width: 100%;
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: var(--space-2xs);
+  transform: translateY(35%);
+  transition: all 0.5s ease;
+}
+
+.mode-icon {
+  width: 60px;
+}
+
+.mode-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.mode-description {
+  opacity: 0;
+}
+
+.mode-2 {
+  background: linear-gradient(
+      180deg,
+      rgba(5, 3, 19, 0) 70.73%,
+      rgba(5, 3, 19, 0.45) 100%
+    ),
+    url(assets/free-for-all.png) no-repeat center/cover;
+}
+
+.mode-3 {
+  background: linear-gradient(
+      180deg,
+      rgba(5, 3, 19, 0) 70.73%,
+      rgba(5, 3, 19, 0.45) 100%
+    ),
+    url(assets/domination.jpg) no-repeat center/cover;
+}
+
+/* Join-battle */
+
+.join-battle {
+  width: 100%;
+  display: flex;
+  height: 250px;
+  min-height: 150px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+  border-radius: var(--space-full, 999px);
+  background: url(assets/join-battle.jpg), center/ cover no-repeat;
+  position: relative;
+
+  & button {
+    position: absolute;
+    bottom: -30px;
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .nav {
+    display: none;
+  }
+
+  .title-container {
+    flex-direction: column-reverse;
+    gap: var(--space-6xl, 40px);
+  }
+
+  .title-image {
+    width: 90%;
+  }
+
+  .title-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .after-h {
+    flex-direction: column;
+  }
+
+  .game-modes-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--space-2xl, 24px);
+    align-self: stretch;
+  }
+
+  .mode-container {
+    transform: translateY(5%);
+  }
+
+  .join-battle {
+    border-radius: var(--space-10xl, 64px);
+  }
+}
